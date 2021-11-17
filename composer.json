@@ -14,10 +14,10 @@
   ],
   "version": "6.0.0",
   "require": {
-    "laravel/framework": "5.8.*",
-    "laravelcollective/html": "^5.4",
+    "laravel/framework": "5.8|6.0|7.0|8.0",
+    "laravelcollective/html": "^6.0",
     "intervention/image": "^2.3",
-    "yajra/laravel-datatables-oracle": "^6.18"
+    "yajra/laravel-datatables-oracle": "^9.0"
   },
   "classmap": [
     "src/Controllers",
