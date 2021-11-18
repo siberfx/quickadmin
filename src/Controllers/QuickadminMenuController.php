@@ -1,8 +1,9 @@
 <?php
+
 namespace Laraveldaily\Quickadmin\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Schema;
@@ -88,9 +89,18 @@ class QuickadminMenuController extends Controller
             $models[$menu->id] = Schema::getColumnListing($tableName);
         }
 
-        return view("qa::menus.createCrud",
-            compact('fieldTypes', 'fieldValidation', 'defaultValuesCbox', 'menusSelect', 'models', 'parentsSelect',
-                'roles'));
+        return view(
+            "qa::menus.createCrud",
+            compact(
+                'fieldTypes',
+                'fieldValidation',
+                'defaultValuesCbox',
+                'menusSelect',
+                'models',
+                'parentsSelect',
+                'roles'
+            )
+        );
     }
 
     /**
@@ -161,7 +171,7 @@ class QuickadminMenuController extends Controller
                 $cached['enum']++;
             }
         }
-//        dd($fields);
+        //        dd($fields);
         $cached['fields']      = $fields;
         $cached['name']        = $request->name;
         $cached['soft_delete'] = $request->soft;
@@ -308,5 +318,3 @@ class QuickadminMenuController extends Controller
         return redirect()->route('menu');
     }
 }
-
-

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Role;
+use App\Models\Role;
 use Illuminate\Http\Request;
 
 class RolesController extends Controller
@@ -94,4 +94,3 @@ class RolesController extends Controller
         return redirect()->route('roles.index')->withMessage(trans('quickadmin::admin.roles-controller-successfully_deleted'));
     }
 }
-
