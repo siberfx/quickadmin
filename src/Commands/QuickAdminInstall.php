@@ -77,7 +77,7 @@ class QuickAdminInstall extends Command
         );
         copy(
             __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Models' . DIRECTORY_SEPARATOR . 'publish' . DIRECTORY_SEPARATOR . 'User',
-            app_path('User.php')
+            app_path('Models\User.php')
         );
         $this->info('Migrations were transferred successfully');
     }
