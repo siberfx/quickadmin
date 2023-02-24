@@ -1,6 +1,6 @@
 {
   "name": "siberfx/quickadmin",
-  "description": "Package for creating adminpanel in Laravel 5",
+  "description": "Package for creating adminpanel in Laravel 8+",
   "license": "MIT",
   "authors": [
     {
@@ -14,10 +14,10 @@
   ],
   "require": {
     "php": "^7|^8",
-    "illuminate/support": "^8|^9",
+    "illuminate/support": "^8|^9|^10",
     "laravelcollective/html": "*",
     "intervention/image": "*",
-    "yajra/laravel-datatables-oracle": "^9.0"
+    "yajra/laravel-datatables-oracle": "^9.0|^10.0"
   },
   "classmap": [
     "src/Controllers",
