@@ -1,6 +1,6 @@
 ## Current state
 
-__IMPORTANT__: This package is not actively maintained and probably won't work with newest Laravel versions.
+__IMPORTANT__: This package is not actively maintained *but @siberfx have adjusted it a little bit to make it working newer versions*.
 
 Our focus switched to __online__ adminpanel generator version - no packages required there, no syntax to learn, it generates Laravel project for you: [QuickAdminPanel.com](https://quickadminpanel.com)
 
